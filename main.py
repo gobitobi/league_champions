@@ -19,6 +19,7 @@ class ChampionsData():
     def fetch_data(self):
         response = requests.get(self.URL)
         data = response.json()
+        
         return data
     
     def fetch_champion_data(self, champion):
